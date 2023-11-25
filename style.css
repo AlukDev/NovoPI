@@ -1,0 +1,501 @@
+/*Começo do Style da Tela LOGIN*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(img/layer1.png);
+}
+
+.geral{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+.logo{
+    background-color: rgba(255, 255, 255, 0.193);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+}
+
+.caixa{
+    height: 600px;
+    background-color: rgba(255,255,255,0.193);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+.caixa *{
+    font-family: 'Poppins',sans-serif;
+    color: #000000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+.caixa h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+.caixa label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.caixa input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.674);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.caixa ::placeholder{
+    color: #0000008a;
+}
+.caixa button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.caixa button a{
+    text-decoration: none;
+}
+.forgot{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.forgot div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #000000;
+  text-align: center;
+  width: 200px;
+  text
+}
+
+.forgot div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+
+.forgot-pass{
+    margin-top: 20px;
+}
+
+.forgot div a{
+    text-decoration: none;
+}
+/*Fim do Style da Tela LOGIN*/
+
+
+
+/*Começo do Style da Tela CADASTRO*/
+
+.geral-cadastro{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.caixa-cadastro{
+    width: 500px;
+    height: 650px;
+    background-color: rgba(255,255,255,0.193);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 0px 35px;
+}
+
+.caixa-cadastro *{
+    font-family: 'Poppins',sans-serif;
+    color: #000000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.caixa-cadastro h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.caixa-cadastro label{
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.caixa-cadastro input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.674);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+
+/*Fim do Style da Tela CADASTRO*/
+
+
+/*Começo do Style da Tela INDEX*/
+
+.barra-lateral{
+    height: 100vh;
+    width: 50px;
+    background-color:rgb(14, 13, 13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    
+}
+
+.sidenav {
+  height: 100%;
+  font-family: 'Poppins',sans-serif;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#1111114e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  backdrop-filter: blur(10px);
+}
+
+.icon-lateral{
+    color: white;
+    text-align: center;
+    font-size:30px;
+    cursor:pointer
+
+}
+
+.icon-usuario{
+    position: absolute;
+    top: 0;
+    font-size: 24px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #000000;
+    margin-top: 25px;
+    background-color:#81818123;
+    border-radius: 20%;
+    padding: 8px;
+}
+
+.itens-menu-lateral{
+    margin-top: 100px;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color: rgba(224, 63, 5, 0.449);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  margin-top: 20px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.icon-config{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    right: 25px;
+    font-size: 42px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.todos-juntos{
+    display: flex;    
+}
+
+.menu-direito {
+    font-family: 'Poppins',sans-serif;
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.menu-direito a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.menu-direito a:hover{
+    color: #f1f1f1;
+    background-color: rgba(224, 63, 5, 0.449);
+}
+
+.contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+}
+
+.texto-chat{
+    font-size: 30px;
+    font-family: 'Parisienne', cursive;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    margin-left: 30px ;
+    margin-bottom: 10px;
+}
+
+
+
+
+.main{
+    padding: 0px 10px;
+    margin-right: 290px;
+    margin-left: 320px;
+}
+
+
+/*Fim do Style da Tela Index*/
+
+
+/*Começo do Style da Tela Esqueceu Senha*/
+
+.geral-esqueceu{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.caixa-esqueceu{
+    width: 500px;
+    height: 300px;
+    background-color: rgba(255,255,255,0.193);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 0px 35px;
+}
+
+.caixa-esqueceu *{
+    font-family: 'Poppins',sans-serif;
+    color: #000000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.caixa-esqueceu h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.caixa-esqueceu label{
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.caixa-esqueceu input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.674);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/*Fim do Style da Tela Esqueceu Senha*/
+
+
+/*Começo do Style da Tela Esqueceu Senha2*/
+
+.geral-esqueceu2{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.caixa-esqueceu2{
+    width: 500px;
+    height: 430px;
+    background-color: rgba(255,255,255,0.193);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 0px 35px;
+}
+
+.caixa-esqueceu2 *{
+    font-family: 'Poppins',sans-serif;
+    color: #000000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.caixa-esqueceu2 h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.icone-esqueceu2{
+    display: flex;
+    justify-content: center;
+}
+
+.icone-esqueceu2 span{
+    font-size: 50px;
+    color: green;
+    margin-top: 20px;
+}
+
+
+/*Fim do Style da Tela Esqueceu Senha2*/
+
+
+
+/*Começo do Style da Tela Criar Receita*/
+
+.geral-cadastro-receita{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caixa-cadastro-receita{
+    width: 500px;
+    height: 650px;
+    background-color: rgba(255,255,255,0.193);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 0px 35px;
+}
+
+.caixa-cadastro-receita *{
+    font-family: 'Poppins',sans-serif;
+    color: #000000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.caixa-cadastro-receita h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.caixa-cadastro-receita label{
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.caixa-cadastro-receita input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.674);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.caixa-cadastro-receita textarea{
+    display: block;
+    height: 200px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.674);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.caixa-cadastro-receita textarea::placeholder{
+    padding-top: 10px;
+}
+
+/*Fim do Style da Tela Criar Receita*/

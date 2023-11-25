@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>MyMeal</title>
+</head>
+<body>
+    <div class="todos-juntos">
+        <div class="barra-lateral" id="barra-lateral" onclick="openNav()">
+            <span class="icon-lateral" onclick="openNav()">&#11177</span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#" class="icon-usuario"><i class="fa fa-user" style="font-size:24px"></i> Usuário001</a>
+            <a href="#" class="itens-menu-lateral">Início</a>
+            <a href="criar-receita.html" class="itens-menu-lateral">Criar Receitas</a>
+            <a href="#" class="itens-menu-lateral">Top10</a>
+            <a href="#" class="itens-menu-lateral">Surpreenda-me</a>
+            <a href="#" class="icon-config"><i style="font-size:24px" class="fa">&#xf013;</i></a>
+        </div>
+    
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "225px";
+            document.getElementById("barra-lateral").style.backgroundColor = "#00000000";
+        }
+    
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("barra-lateral").style.backgroundColor = "#111";
+        }
+        </script>
+    
+        <div class="main">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, esse aut! Beatae eligendi totam dolores, aut necessitatibus, molestias excepturi error, placeat officiis exercitationem quibusdam? Doloremque sint in ipsa deleniti atque!            
+        </div>
+
+        <div class="menu-direito">
+        <a href="#"><i class="fa fa-user" style="font-size:24px"> Usuário001 <i style='font-size:10px; color: greenyellow;' class='fas'>&#xf111;</i></i></a>
+        <p style="color: white;">_____________________</p>
+        <br>
+            <div class="contatos">
+                <a href="#"><i class="fa fa-user" style="font-size:24px">Usuário042 <i style='font-size:10px; color: greenyellow;' class='fas'>&#xf111;</i></i></a>
+                <a href="#"><i class="fa fa-user" style="font-size:24px">Usuário063 <i style='font-size:10px; color: greenyellow;' class='fas'>&#xf111;</i></i></a>
+                <a href="#"><i class="fa fa-user" style="font-size:24px">Usuário020 <i style='font-size:10px; color: greenyellow;' class='fas'>&#xf111;</i></i></a>
+                <a href="#"><i class="fa fa-user" style="font-size:24px">Usuário023 <i style='font-size:10px; color: orange;' class='fas'>&#xf111;</i></i></a>
+                <a href="#"><i class="fa fa-user" style="font-size:24px">Usuário054 <i style='font-size:10px; color: orange;' class='fas'>&#xf111;</i></i></a>
+                <a href="#"><i class="fa fa-user" style="font-size:24px">Usuário047 <i style='font-size:10px; color: gray;' class='fas'>&#xf111;</i></i></a>
+                <a href="#"><i class="fa fa-user" style="font-size:24px"> Usuário066 <i style='font-size:10px; color: gray;' class='fas'>&#xf111;</i></i></a>
+            </div>
+        <h3 class="texto-chat">MyMeal</h3>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <div class="todos-juntos">
+        <div class="barra-lateral" id="barra-lateral" onclick="openNav()">
+            <span class="icon-lateral" onclick="openNav()">&#11177</span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#" class="icon-usuario"><i class="fa fa-user" style="font-size:24px"></i> Usuário001</a>
+            <a href="#" class="itens-menu-lateral">Início</a>
+            <a href="criar-receita.html" class="itens-menu-lateral">Criar Receitas</a>
+            <a href="#" class="itens-menu-lateral">Top10</a>
+            <a href="#" class="itens-menu-lateral">Surpreenda-me</a>
+            <a href="#" class="icon-config"><i style="font-size:24px" class="fa">&#xf013;</i></a>
+        </div>
+    
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("barra-lateral").style.backgroundColor = "#00000000";
+        }
+    
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("barra-lateral").style.backgroundColor = "#111";
+        }
+        </script>
+    
+        <div class="geral-cadastro-receita">
+            <form class="caixa-cadastro-receita">
+                <h3>Cadastrar nova Receita</h3>
+    
+                <label>Título da Receita</label>
+                <input type="text">
+    
+                <label>Ingredientes</label>
+                <input type="text" placeholder="Digite os Ingredientes...">
+        
+                <label>Modo de Preparo</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Dê as instruções para preparar sua receita..."></textarea>
+        
+                <label>Adicione Vídeos ou fotos</label>
+                <input class="fotos-videos" type="file">
+        
+                <div class="forgot">
+                  <div class="cadastro"><a href="index.html">Confirmar</a></div>
+                </div>
+            </form>
+            <div class="menu-direito">
+                <a href="#"><i class="fa fa-user" style="font-size:24px"> Usuário001 <i style='font-size:10px; color: greenyellow;' class='fas'>&#xf111;</i></i></a>
+                <p style="color: white;">_____________________</p>
+                <br>
+                    <div class="contatos">
+                        <a href="#"><i class="fa fa-user" style="font-size:24px">Usuário042 <i style='font-size:10px; color: greenyellow;' class='fas'>&#xf111;</i></i></a>
+                        <a href="#"><i class="fa fa-user" style="font-size:24px">Usuário063 <i style='font-size:10px; color: greenyellow;' class='fas'>&#xf111;</i></i></a>
+                        <a href="#"><i class="fa fa-user" style="font-size:24px">Usuário020 <i style='font-size:10px; color: greenyellow;' class='fas'>&#xf111;</i></i></a>
+                        <a href="#"><i class="fa fa-user" style="font-size:24px">Usuário023 <i style='font-size:10px; color: orange;' class='fas'>&#xf111;</i></i></a>
+                        <a href="#"><i class="fa fa-user" style="font-size:24px">Usuário054 <i style='font-size:10px; color: orange;' class='fas'>&#xf111;</i></i></a>
+                        <a href="#"><i class="fa fa-user" style="font-size:24px">Usuário047 <i style='font-size:10px; color: gray;' class='fas'>&#xf111;</i></i></a>
+                        <a href="#"><i class="fa fa-user" style="font-size:24px"> Usuário066 <i style='font-size:10px; color: gray;' class='fas'>&#xf111;</i></i></a>
+                    </div>
+                <h3 class="texto-chat">MyMeal</h3>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
